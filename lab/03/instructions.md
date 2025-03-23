@@ -45,9 +45,7 @@ ssh <instanceHostname> -A
 
 ```bash
 sudo apt update && sudo apt upgrade
-sudo apt install openmpi-bin
-sudo chmod +x $(which mpirun)
-sudo chmod +x $(which orted)
+sudo apt install openmpi-bin openmpi-common
 mpirun --host worker1,worker2 hostname
 ```
 
