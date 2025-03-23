@@ -13,7 +13,7 @@
 
 ## Configuring the instances
 
-`localHost`
+`@localHost`
 
 ```bash
 cd /Downloads
@@ -25,7 +25,7 @@ ssh ubuntu@<instancePublicIP> -A
 
 Add the instances IPs to the hosts file (repeat this process for all instances/machines)
 
-`ubuntu@ip-<hostnamePrivateIP>`
+`@ubuntu@ip-<hostnamePrivateIP>`
 
 ```bash
 sudo vim /etc/hosts
@@ -38,7 +38,7 @@ sudo vim /etc/hosts
 To change to another instance, you can use
 
 ```bash
-ssh ubuntu@<instanceHostname> -A
+ssh <instanceHostname> -A
 ```
 
 ## Install MPI on all instances
